@@ -38,8 +38,6 @@ It was introduced by the British statistician and biologist Ronald Fisher in his
 
 ![](irisspecies.png)
 
-![](iris.png)
-
 The Iris dataset is deservedly widely used throughout statistical science, especially for illustrating various problems in statistical graphics, multivariate statistics and machine learning.[ref](https://stats.stackexchange.com/questions/74776/what-aspects-of-the-iris-data-set-make-it-so-successful-as-an-example-teaching/74901#74901)
 There are many reasons for this: 
 
@@ -54,7 +52,10 @@ There are many reasons for this:
 * The data are real good quality data. In principle and in practice, test datasets could be synthetic and that might be necessary or useful to make a point. 
 * The Iris dataset can be enjoyably coupled with pictures of the flowers concerned, as from e.g. the useful [Wiki](https://en.wikipedia.org/wiki/Iris_flower_data_set) entry on the dataset.
 
+![](iris.png)
+
 ###### note
 Iris setosa, Iris versicolor and Iris virginica are three species (not varieties, as in some statistical accounts)[ref](https://stats.stackexchange.com/questions/74776/what-aspects-of-the-iris-data-set-make-it-so-successful-as-an-example-teaching/74901#74901)
+
 
 
