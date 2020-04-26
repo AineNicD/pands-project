@@ -61,7 +61,22 @@ import numpy as np
 
 ![](petal_sepal.png)
 
-The Iris flower data set is a multivariate data set. It consists of 50 samples from each of three species of Iris Flowers — Iris Setosa, Iris Virginica and Iris Versicolor, under 5 attributes - Petal Length, Petal Width, Sepal Length, Sepal width and Class(Species).
+The Iris flower data set is a multivariate data set. It consists of 50 samples from each of three species of Iris Flowers:
+
+1 Iris Setosa
+
+2 Iris Virginica 
+
+3 Iris Versicolor
+
+Under 5 attributes;
+
+* Petal Length
+* Petal Width
+* Sepal Length
+* Sepal width 
+* Species
+
 It was introduced by the British statistician and biologist Ronald Fisher in his 1936 paper [“The use of multiple measurements in taxonomic problems”.](https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x)
 
 ![](irisspecies.png)
