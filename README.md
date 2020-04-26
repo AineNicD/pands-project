@@ -27,7 +27,15 @@ It might help to suppose that your manager has asked you to investigate the data
 Anaconda is popular because it brings many of the tools used in data science and machine learning with just one install, so it's great for having short and simple setup. It has all the libraries needed to write and implement the programs in this project. 
 
 A program to Check the versions of libraries in your Python Packages. [checkLibraries.py](https://github.com/AineNicD/pands-project/blob/master/checkLibraries.py)
+Many of these libraries have data sets on them. Ready to be imported with the right code. 
+Such as:[scikit-learn](https://scikit-learn.org/stable/)
 
+~~~ ## Import data
+from sklearn.datasets import load_iris 
+iris_dataset = load_iris()
+
+print(iris_dataset['DESCR'])
+~~~
 
 ### About Fisher's Iris data set. 
 
