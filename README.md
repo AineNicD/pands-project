@@ -45,6 +45,17 @@ import pandas as pd
 data = pd.read_csv("IrisDataSet.csv") 
 ~~~
 
+##### For Statistical Analysis code [ref](https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40)
+Import all necessary libraries of Python —
+~~~
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+~~~
+
+
+
 
 ### About Fisher's Iris data set. 
 
