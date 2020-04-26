@@ -116,6 +116,6 @@ a reminder of other important imports;
 import matplotlib.pyplot as plt
 import numpy as np
 ~~~
-![hist-variable.png](.PlotImages/hist-variable.png)
-![scattervariable.png](.PlotImages/scattervariable.png)
-![boxvariable.png](.PlotImages/boxvariable.png)
+![](hist-variable.png)
+![](scattervariable.png)
+![](boxvariable.png)
