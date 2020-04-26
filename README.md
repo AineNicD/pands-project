@@ -104,7 +104,7 @@ Iris setosa, Iris versicolor and Iris virginica are three species (not varieties
 
 #### Plots
 
-To start the reseach of the data through plots, I created a histogram, scatterplot and boxplot to get a closer look at how the variables are represented. I got good help with this from [ref](https://copycoding.com/d/your-second-machine-learning-project-with-this-famous-iris-dataset-in-python-part-5-of-9-). [hist-variable.py](https://github.com/AineNicD/pands-project/blob/master/hist-variable.py), [scattervariable.py](https://github.com/AineNicD/pands-project/blob/master/scattervariable.py) and [boxvariable.py](https://github.com/AineNicD/pands-project/blob/master/boxvariable.py).
+To start the reseach of the data through plots, I created a histogram, scatterplot and boxplot to get a closer look at how the variables are represented. I got good help with this from [ref](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/). [hist-variable.py](https://github.com/AineNicD/pands-project/blob/master/hist-variable.py), [scattervariable.py](https://github.com/AineNicD/pands-project/blob/master/scattervariable.py) and [boxvariable.py](https://github.com/AineNicD/pands-project/blob/master/boxvariable.py).
 
 I found my perfered method to load the iris data into my code is; 
 ~~~
