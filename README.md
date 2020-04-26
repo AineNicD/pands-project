@@ -28,7 +28,7 @@ Anaconda is popular because it brings many of the tools used in data science and
 
 A program to Check the versions of libraries in your Python Packages. [checkLibraries.py](https://github.com/AineNicD/pands-project/blob/master/checkLibraries.py)
 Many of these libraries have data sets on them. Ready to be imported with the right code. 
-Such as:[scikit-learn](https://scikit-learn.org/stable/)
+Such as: [scikit-learn](https://scikit-learn.org/stable/)
 
 ~~~ ## Import data
 from sklearn.datasets import load_iris 
@@ -36,6 +36,15 @@ iris_dataset = load_iris()
 
 print(iris_dataset['DESCR'])
 ~~~
+Another way is to use the [pandas](https://pandas.pydata.org/) 
+for this, have the csv file in the same directory that your python process is based
+~~~
+#Load the Pandas libraries with alias 'pd' 
+import pandas as pd 
+# Read data from file 'filename.csv' 
+data = pd.read_csv("filename.csv") 
+~~~
+
 
 ### About Fisher's Iris data set. 
 
