@@ -10,4 +10,4 @@ from pandas.plotting import scatter_matrix
 scatter_matrix(data)
 plt.show()
 
-#https://copycoding.com/d/your-second-machine-learning-project-with-this-famous-iris-dataset-in-python-part-5-of-9-
+#https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
