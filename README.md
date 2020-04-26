@@ -42,7 +42,7 @@ for this, have the csv file in the same directory that your python process is ba
 #Load the Pandas libraries with alias 'pd' 
 import pandas as pd 
 # Read data from file 'filename.csv' 
-data = pd.read_csv("filename.csv") 
+data = pd.read_csv("IrisDataSet.csv") 
 ~~~
 
 
