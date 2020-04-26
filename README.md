@@ -59,8 +59,6 @@ import numpy as np
 
 ### About Fisher's Iris data set. 
 
-![](petal_sepal.png)
-
 The Iris flower data set is a multivariate data set. It consists of 50 samples from each of three species of Iris Flowers:
 
 1 Iris Setosa
@@ -68,6 +66,8 @@ The Iris flower data set is a multivariate data set. It consists of 50 samples f
 2 Iris Virginica 
 
 3 Iris Versicolor
+
+![](irisspecies.png)
 
 Under 5 attributes;
 
@@ -77,9 +77,10 @@ Under 5 attributes;
 * Sepal width 
 * Species
 
+![](petal_sepal.png)
+
 It was introduced by the British statistician and biologist Ronald Fisher in his 1936 paper [“The use of multiple measurements in taxonomic problems”.](https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x)
 
-![](irisspecies.png)
 
 The Iris dataset is deservedly widely used throughout statistical science, especially for illustrating various problems in statistical graphics, multivariate statistics and machine learning.[ref](https://stats.stackexchange.com/questions/74776/what-aspects-of-the-iris-data-set-make-it-so-successful-as-an-example-teaching/74901#74901)
 There are many reasons for this: 
