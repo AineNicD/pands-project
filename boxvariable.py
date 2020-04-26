@@ -8,4 +8,4 @@ data = pd.read_csv("IrisDataSet.csv")
 data.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 plt.show()
 
-#https://copycoding.com/d/your-second-machine-learning-project-with-this-famous-iris-dataset-in-python-part-5-of-9-
+#https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
