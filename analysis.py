@@ -7,13 +7,8 @@
 
 #First a summary of the each variable saved to a single text file.
 
-#The method I learned to output to a text file was for strings, I used str() to incorporate it here.
-#This code saves the summary of the variables to a text file but I would prefer the text file 
-#be a bit more pleasant to look at. 
-
 import numpy as np
 import pandas as pd
-
 #https://pandas.pydata.org/docs/reference/api/pandas.plotting.scatter_matrix.html
 # imported for scatter plot, there are many options like this in the pandas library
 from pandas.plotting import scatter_matrix
@@ -26,6 +21,8 @@ data = pd.read_csv("irisDataSet.csv")
 #names of variables
 names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
 
+#data frame code for seperating each species from https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation
+
 #seperating them by species
 setosa = data[data['species']=='setosa'] 
 
@@ -33,41 +30,44 @@ versicolor =data[data['species']=='versicolor']
 
 virginica =data[data['species']=='virginica']
 
-#changing them all to one line as str() will only accept one.
-a = setosa.describe(), versicolor.describe(),virginica.describe()
+##summary of details to string for the txt file
+data = str(data.describe())
+s = str(setosa.describe())
+ver = str (versicolor.describe())
+vir = str(virginica.describe())
 
-print(a)
+#output to terminal
+print ("Iris data set Summary")
+print (data)
+print ("Setosa summary")
+print(s)
+print ("Versicolor summary")
+print(ver)
+print ("virginica summary")
+print(vir)
 
-#str converts whatever you pass in to a string.
-def out_fun():
-    return str(a)
-output = out_fun()
-file = open("Summaryvariable.txt","w")
-file.write(output)
+#output to file with headings on seperate lines
+file = open("Summary.txt","w")
+file.write(" IRIS DATA SET SUMMARY \n")
+file.write(data)
+file.write("\n SETOSA SUMMARY \n")
+file.write(s)
+file.write("\n VERSICOLOR SUMMARY \n")
+file.write(ver)
+file.write("\n VIRGINICA SUMMARY \n")
+file.write(vir)
 file.close()
 
+#ref:
+# lecture videos
+# https://realpython.com/read-write-files-python/
 
 #Saves a historgram of each variable to png files
-#names of variables
-names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
-
-# https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
-# DataFrame.describe(percentiles=None, include=None, exclude=None)[source]
-setosa =data[data['species']=='setosa']
-
-versicolor =data[data['species']=='versicolor']
-
-virginica =data[data['species']=='virginica']
-
-# seperated each data by species
-a = setosa
-b= versicolor
-c = virginica
 
 #outputs histograms
-a.hist()
-b.hist()
-c.hist()
+setosa.hist()
+versicolor.hist()
+virginica.hist()
 
 #saves each historgram to png files with their species title
 plt.savefig("setosa.png")
