@@ -13,7 +13,7 @@ data = pd.read_csv("irisDataSet.csv")
 names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
 
 # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
-# DataFrame.describe(percentiles=None, include=None, exclude=None)[source]
+
 setosa =data[data['species']=='setosa']
 
 versicolor =data[data['species']=='versicolor']
@@ -35,12 +35,10 @@ plt.savefig("setosa.png")
 plt.savefig("versicolor.png")
 plt.savefig("virginica.png")
 
-#I found the quick method to save each histogram from https://stackoverflow.com/questions/46411533/how-can-i-save-histogram-plot-in-python
-
 
 plt.show()
 
 
-
+# Ian Mc Loughlin lecture on plots
 
 
