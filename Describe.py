@@ -15,6 +15,7 @@ names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species'
 # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
 # DataFrame.describe(percentiles=None, include=None, exclude=None)[source]
 
+#data frame code for each species from https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation
 setosa=data[data['species']=='setosa']
 
 versicolor =data[data['species']=='versicolor']
