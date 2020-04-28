@@ -148,7 +148,7 @@ I decided to work with the data in full for my tasks but seperated them by spece
 
 I highly recommend [scilkit-learn](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html), it has great information on data sets already built in. 
 
-I got a good code for seperating the data species from [Kaggle](https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanationl)
+I got a good code for seperating the data species from [Kaggle](https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation)
 ~~~
 setosa =data[data['species']=='setosa']
 
