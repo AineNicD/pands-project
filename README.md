@@ -15,7 +15,7 @@ This project concerns the well-known Fisher’s Iris data set. You must research
 > • saves a histogram of each variable to png ﬁles, and 
 > • outputs a scatter plot of each pair of variables. 
 
-### Problem solution: [analysis.py]()
+### Program solution: [analysis.py]()
 
 
 ## Technologies 
