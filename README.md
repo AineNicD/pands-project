@@ -148,7 +148,7 @@ I decided to work with the data in full for my tasks but seperated them by spece
 
 I highly recommend [scilkit-learn](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html), it has great information on data sets already built in. 
 
-I got a good code for seperating the data species from [pandas wesbite](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html)
+I got a good code for seperating the data species from [Kaggle](https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanationl)
 ~~~
 setosa =data[data['species']=='setosa']
 
@@ -212,10 +212,6 @@ Versicolor
 Virginica
 
 ![](virginica.png)
-
-
-Google is a fantastic resource, I can spend hours trying to figure out how to do something and can end up finding that the answer is as simple as one line of code. 
-Thanks to all the packages built into Anaconda, this has become a very effient way to code.
 
 For outputing scatter plots of each pair of data. [scattervar.py](). 
 These imports were used in this code
