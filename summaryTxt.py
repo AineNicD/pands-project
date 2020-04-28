@@ -22,16 +22,17 @@ versicolor =data[data['species']=='versicolor']
 
 virginica =data[data['species']=='virginica']
 
-#changing them all to one line as str() will only accept one.
-#changing them all to one line as str() will only accept one.
+#changing them all to one line as str() will only accept one object.
 a = setosa.describe(), versicolor.describe(),virginica.describe()
 
 print(a)
 
-#str converts whatever you pass in to a string.
+#outputing result of code to a text file. 
 def out_fun():
     return str(a)
 output = out_fun()
 file = open("Summaryvariable.txt","w")
 file.write(output)
 file.close()
+
+#ref: https://www.quora.com/How-do-I-write-the-output-of-a-function-to-a-text-file-in-python
