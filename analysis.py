@@ -31,14 +31,14 @@ versicolor =data[data['species']=='versicolor']
 virginica =data[data['species']=='virginica']
 
 ##summary of details to string for the txt file
-data = str(data.describe())
+d = str(data.describe())
 s = str(setosa.describe())
 ver = str (versicolor.describe())
 vir = str(virginica.describe())
 
 #output to terminal
 print ("Iris data set Summary")
-print (data)
+print (d)
 print ("Setosa summary")
 print(s)
 print ("Versicolor summary")
@@ -49,7 +49,7 @@ print(vir)
 #output to file with headings on seperate lines
 file = open("Summary.txt","w")
 file.write(" IRIS DATA SET SUMMARY \n")
-file.write(data)
+file.write(d)
 file.write("\n SETOSA SUMMARY \n")
 file.write(s)
 file.write("\n VERSICOLOR SUMMARY \n")
