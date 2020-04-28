@@ -74,9 +74,6 @@ plt.savefig("setosa.png")
 plt.savefig("versicolor.png")
 plt.savefig("virginica.png")
 
-
-plt.show()
-
 #note, you have to "x" out of histograms for scatter plots to appear
 
 # https://www.kaggle.com/farheen28/iris-dataset-analysis-using-knn
