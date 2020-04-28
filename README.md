@@ -169,7 +169,7 @@ a = setosa.describe(), versicolor.describe(),virginica.describe()
 
 print(a)
 
-#str converts whatever you pass in to a string.
+#outputing result of code to a text file.
 def out_fun():
     return str(a)
 output = out_fun()
@@ -178,7 +178,7 @@ file.write(output)
 file.close()
 ~~~
 
-I got great help with this output code from [ref](https://www.quora.com/How-do-I-write-the-output-of-a-function-to-a-text-file-in-python]
+I got great help with this output code from [ref](https://www.quora.com/How-do-I-write-the-output-of-a-function-to-a-text-file-in-python)
 I again seperated them by species. I improved on this code for my main [analysis.py]()
 
 Next step was to save a histogram of each variable to png files,
