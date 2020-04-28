@@ -12,23 +12,17 @@ data = pd.read_csv("irisDataSet.csv")
 #names of variables
 names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
 
-# https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
-
+# seperating by species
 setosa =data[data['species']=='setosa']
 
 versicolor =data[data['species']=='versicolor']
 
 virginica =data[data['species']=='virginica']
 
-# seperated each data by species
-a = setosa
-b= versicolor
-c = virginica
-
 #outputs histograms
-a.hist()
-b.hist()
-c.hist()
+setosa.hist()
+versicolor.hist()
+virginica.hist()
 
 #saves each historgram to png files with their species title
 plt.savefig("setosa.png")
@@ -40,5 +34,5 @@ plt.show()
 
 
 # Ian Mc Loughlin lecture on plots
-
+#data frame code for each species from https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation
 
