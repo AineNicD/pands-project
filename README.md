@@ -15,7 +15,7 @@ This project concerns the well-known Fisher’s Iris data set. You must research
 > • saves a histogram of each variable to png ﬁles, and 
 > • outputs a scatter plot of each pair of variables. 
 
-### Program solution: [analysis.py]()
+### Program solution: [analysis.py](https://github.com/AineNicD/pands-project/blob/master/analysis.py)
 
 
 ## Technologies 
@@ -179,7 +179,7 @@ file.close()
 ~~~
 
 I got great help with this output code from [ref](https://www.quora.com/How-do-I-write-the-output-of-a-function-to-a-text-file-in-python)
-I again seperated them by species. I improved on this code for my main [analysis.py]()
+I again seperated them by species. I improved on this code for my main [analysis.py](https://github.com/AineNicD/pands-project/blob/master/analysis.py)
 
 Next step was to save a histogram of each variable to png files,
 
@@ -232,9 +232,30 @@ This output my scatter plots of each pair of variables.
 ![](scatterSepal.png)
 ![](scatterPetal.png)
 
-Now that I had finally figured out how to do the three tasks set out in this project it was time to put them all together in [analysis.py]()
+Now that I had finally figured out how to do the three tasks set out in this project it was time to put them all together in [analysis.py](https://github.com/AineNicD/pands-project/blob/master/analysis.py)
 
-I copy and pasted all three codes into one Visual studio code file and began working on it there, they went together well which I was happy about. 
+
+The program [analysis.py](https://github.com/AineNicD/pands-project/blob/master/analysis.py)
+
+> 1. outputs a summary of each variable to a single text file.
+> 2. saves a histogram of each variable to png files, and
+> 3. outputs a scatter plot of each pair of variables.
+
+I wasn't happy with the text file my code was producing for the part 1 of this program, I researched the pandas website and details on how to write and save outputs to a file and came up with this code using it as a guide; 
+
+~~~
+file = open("Summary.txt","w")
+file.write(" IRIS DATA SET SUMMARY \n")
+file.write(d)
+file.write("\n SETOSA DETAILS \n")
+file.write(s)
+file.write("\n VERSICOLOR DETAILS \n")
+file.write(ver)
+file.write("\n VIRGINICA DETAILS \n")
+file.write(vir)
+file.close()
+~~~
+I was very happy with the text file this produced with headings. \n meaans new line and played a vital role in making my text file more presentable. [Real python](https://realpython.com/read-write-files-python/) have a great guide for this. 
 
 
 ### References
