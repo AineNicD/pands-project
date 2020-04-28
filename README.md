@@ -200,7 +200,6 @@ plt.savefig("setosa.png")
 plt.savefig("versicolor.png")
 plt.savefig("virginica.png")
 ~~~
-I got the code to save the histograms to png from stack over flow, [pl.savefig("abc.png")](https://stackoverflow.com/questions/46411533/how-can-i-save-histogram-plot-in-python)
 
 Setosa
 
