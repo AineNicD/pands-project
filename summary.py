@@ -1,8 +1,4 @@
-#A summary of the each variable saved to a single text file.
-
-#The method I learned to output to a text file was for strings, I used str() to incorporate it here.
-#This code saves the summary of the variables to a text file but I would prefer the text file 
-#be a bit more pleasant to look at. 
+#This program saves the summary of the variables to a text file.
 
 import numpy as np
 import pandas as pd
@@ -13,26 +9,39 @@ data = pd.read_csv("irisDataSet.csv")
 #names of variables
 names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
 
-# https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
-# DataFrame.describe(percentiles=None, include=None, exclude=None)[source]
+#data frame code for seperating each species from https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation
 
-setosa data[data['species']=='setosa'] 
+#seperating them by species
+setosa = data[data['species']=='setosa'] 
 
 versicolor =data[data['species']=='versicolor']
 
 virginica =data[data['species']=='virginica']
 
-#changing them all to one line as str() will only accept one object.
-a = setosa.describe(), versicolor.describe(),virginica.describe()
+##summary of details to string for the txt file
+d = str(data.describe())
+s = str(setosa.describe())
+ver = str (versicolor.describe())
+vir = str(virginica.describe())
 
-print(a)
+#output to terminal
+print ("IRIS DATA SET SUMMARY")
+print (d)
+print ("SETOSA DETAILS")
+print(s)
+print ("VERSICOLOR DETAILS")
+print(ver)
+print ("VIRGINICA DETAILS")
+print(vir)
 
-#outputing result of code to a text file. 
-def out_fun():
-    return str(a)
-output = out_fun()
-file = open("Summaryvariable.txt","w")
-file.write(output)
+#output to file with headings on seperate lines
+file = open("Summary.txt","w")
+file.write(" IRIS DATA SET SUMMARY \n")
+file.write(d)
+file.write("\n SETOSA DETAILS \n")
+file.write(s)
+file.write("\n VERSICOLOR DETAILS \n")
+file.write(ver)
+file.write("\n VIRGINICA DETAILS \n")
+file.write(vir)
 file.close()
-
-#ref: https://www.quora.com/How-do-I-write-the-output-of-a-function-to-a-text-file-in-python
