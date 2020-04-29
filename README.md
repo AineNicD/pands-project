@@ -180,9 +180,9 @@ It produces a lovely output sumarising each species data.
 
 ![](describe()output.png)
 
-I used this summary of the data for my [summary.py](https://github.com/AineNicD/pands-project/blob/master/summaryTxt.py)
+I used this summary of the data for my [summary.py](https://github.com/AineNicD/pands-project/blob/master/summary.py)
 
-I did extensive research, re watching course videos and studying the [Real python](https://realpython.com/read-write-files-python/), and the [pandas website](https://pandas.pydata.org/)to come up with this code, it is simple but effective. It produced the Summary text file I wanted it to. 
+I did extensive research, re watching course videos and studying the [Real python](https://realpython.com/read-write-files-python/), and the [pandas website](https://pandas.pydata.org/)to come up with this code, it is simple but effective. It produced the summary text file I wanted it to. 
 
 ~~~
 ##summary of details to string for the txt file
