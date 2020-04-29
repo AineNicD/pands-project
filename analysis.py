@@ -5,7 +5,9 @@
 
 #I worked on each task seperatley and then put them all together.
 
-#First a summary of the each variable saved to a single text file.
+#A summary of the each variable saved to a single text file.
+
+#import libraries 
 
 import numpy as np
 import pandas as pd
@@ -58,10 +60,6 @@ file.write("\n VIRGINICA DETAILS \n")
 file.write(vir)
 file.close()
 
-#ref:
-# lecture videos
-# https://realpython.com/read-write-files-python/
-
 #Saves a historgram of each variable to png files
 
 #outputs histograms
@@ -74,11 +72,12 @@ plt.savefig("setosa.png")
 plt.savefig("versicolor.png")
 plt.savefig("virginica.png")
 
-#note, you have to "x" out of histograms for scatter plots to appear
+#outputs scatter plots of each pair of variables
 
-# https://www.kaggle.com/farheen28/iris-dataset-analysis-using-knn
+#https://www.kaggle.com/farheen28/iris-dataset-analysis-using-knn
 #https://seaborn.pydata.org/generated/seaborn.PairGrid.html
-#Seaborn, there are so many great codes for analysis in the Seaborn library
+
+#There are so many great codes for analysis in the Seaborn library
 #The links above helped me deveop this for the scatterplots of each pair
 #after a few failed attemps and playing around with it,
 #it simplified to two lines of code for both.
@@ -88,4 +87,7 @@ sns.FacetGrid(data, hue="species", height=8).map(plt.scatter, "petal_length", "p
 
 plt.show()
 
+#references
+#Ian McLoughlin course lecture videos
 #https://www.kaggle.com/anthonyhills/classifying-species-of-iris-flowers
+#https://realpython.com/read-write-files-python/
