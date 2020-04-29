@@ -46,7 +46,8 @@ import pandas as pd
 data = pd.read_csv("IrisDataSet.csv") 
 ~~~
 
-##### For Statistical Analysis code [ref](https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40)
+#### For Statistical Analysis code 
+
 Import all necessary libraries of Python —
 ~~~
 import pandas as pd
@@ -119,7 +120,7 @@ Fisher didn’t collect these data himself. He explicitly credited the data sour
 ![](gaspe_canada.png)
 
 
-"Dr. Anderson was a faculty member at the Washington University in St. Louis. In 1929, he accepted a fellowship to work in Britain with a few scientists, including Fisher. Through this collaboration opportunity, Fisher obtained Dr. Anderson’s permission to use the data set in his article. 
+"Dr. Anderson was a faculty member at the Washington University in St. Louis. In 1929, he accepted a fellowship to work in Britain with a few scientists, including Fisher. Through this collaboration opportunity, Fisher obtained Dr. Anderson’s permission to use the data set in his article."[ref](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
 
 The discriminant function performed well in discriminating between these species, 
 The Iris setosa is noticeably different from the other two species and there is some overlap between Iris versicolor and Iris virginica. 
@@ -294,7 +295,7 @@ This output my scatter plots of each pair of variables.
 ![](scatterSepal.png)
 ![](scatterPetal.png)
 
-Now that I had finally figured out how to do the three tasks set out in this project it was time to put them all together in [analysis.py](https://github.com/AineNicD/pands-project/blob/master/analysis.py)
+Now that I had finally figured out how to do the three tasks set out in the program for this project it was time to put them all together in [analysis.py](https://github.com/AineNicD/pands-project/blob/master/analysis.py)
 
 
 The program [analysis.py](https://github.com/AineNicD/pands-project/blob/master/analysis.py)
