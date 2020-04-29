@@ -6,14 +6,14 @@ This repository contains my research of the well known [Fisher’s Iris data set
 I downloaded the [irish data set](IrisDataSet.csv) from [github](https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv).
 
 ## Problem statement
-This project concerns the well-known Fisher’s Iris data set. You must research the data set and write documentation and code (in Python to investigate it. An online search for information on the data set will convince you that many people have investigated it previously. You are expected to be able to break this project into several smaller tasks that are easier to solve, and to plug these together after they have been completed. You might do that for this project as follows: 
+"This project concerns the well-known Fisher’s Iris data set. You must research the data set and write documentation and code (in Python to investigate it. An online search for information on the data set will convince you that many people have investigated it previously. You are expected to be able to break this project into several smaller tasks that are easier to solve, and to plug these together after they have been completed. You might do that for this project as follows: 
 > 1. Research the data set online and write a summary about it in your README. 
 > 2. Download the data set and add it to your repository. 
 > 3. Write a program called analysis.py that: 
 >
 > • outputs a summary of each variable to a single text ﬁle, 
 > • saves a histogram of each variable to png ﬁles, and 
-> • outputs a scatter plot of each pair of variables. 
+> • outputs a scatter plot of each pair of variables. "
 
 ### Program solution: [analysis.py](https://github.com/AineNicD/pands-project/blob/master/analysis.py)
 
@@ -185,15 +185,12 @@ Next step was to save a histogram of each variable to png files,
 
 I seperated them by species to produce histograms of each vaibale that save under the name of the species. 
 [histVarPng.py]()
-~~~
-a = setosa
-b= versicolor
-c = virginica
 
+~~~
 #outputs histograms
-a.hist()
-b.hist()
-c.hist()
+setosa.hist()
+Versicolor.hist()
+Virginica.hist()
 
 #saves each historgram to png files with their species title
 plt.savefig("setosa.png")
@@ -241,7 +238,7 @@ The program [analysis.py](https://github.com/AineNicD/pands-project/blob/master/
 > 2. saves a histogram of each variable to png files, and
 > 3. outputs a scatter plot of each pair of variables.
 
-I wasn't happy with the text file my code was producing for the part 1 of this program, I researched the pandas website and details on how to write and save outputs to a file and came up with this code using it as a guide; 
+I wasn't happy with the text file my code was producing for the part 1 of this program, I researched the pandas website and details on how to write and save outputs to a file and came up with this code; 
 
 ~~~
 file = open("Summary.txt","w")
@@ -255,7 +252,7 @@ file.write("\n VIRGINICA DETAILS \n")
 file.write(vir)
 file.close()
 ~~~
-I was very happy with the text file this produced with headings. \n meaans new line and played a vital role in making my text file more presentable. [Real python](https://realpython.com/read-write-files-python/) have a great guide for this. 
+I was very happy with the text file this produced with headings. \n means new line and played a vital role in making my text file more presentable. [Real python](https://realpython.com/read-write-files-python/) have a great guide for this. 
 
 
 ### References
