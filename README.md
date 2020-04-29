@@ -91,32 +91,49 @@ Under 5 attributes;
 
 ![](petal_sepal.png)
 
-It was introduced by the British statistician and biologist Ronald Fisher in his 1936 paper [“The use of multiple measurements in taxonomic problems”.](https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x)
-
-
 The Iris dataset is deservedly widely used throughout statistical science, especially for illustrating various problems in statistical graphics, multivariate statistics and machine learning.[ref](https://stats.stackexchange.com/questions/74776/what-aspects-of-the-iris-data-set-make-it-so-successful-as-an-example-teaching/74901#74901)
 There are many reasons for this: 
 
+~~~
 * It contains 150 observations, it is small but not trivial. 
 * There are no null values in the data set.
-* There are 50 observations of each species (setosa, versicolor, virginica).[ref](https://stats.stackexchange.com/questions/74776/what-aspects-of-the-iris-data-set-make-it-so-successful-as-an-example-teaching/74901#74901)
-* Anderson classified 50 examples of 3 different species. Each specimen was [ref](https://www.cs.odu.edu/~ccartled/Teaching/2017-Fall/DataAnalysis/Presentations/030-iris-dataset.pdf)
-* Collected on the same day
-* Collected by the same person
-* Measured using the same instruments
+* There are 50 observations of each species (setosa, versicolor, virginica).
+* Anderson classified 50 examples of 3 different species. 
+* Each specimen was
+  * Collected on the same day
+  * Collected by the same person
+  * Measured using the same instruments
 * The task it poses of discriminating between three species of Iris from measurements of their petals and sepals is simple but challenging.
 * The data are real good quality data. In principle and in practice, test datasets could be synthetic and that might be necessary or useful to make a point. 
-* The Iris dataset can be enjoyably coupled with pictures of the flowers concerned, as from e.g. the useful [Wiki](https://en.wikipedia.org/wiki/Iris_flower_data_set) entry on the dataset.
+~~~
+[ref](https://stats.stackexchange.com/questions/74776/what-aspects-of-the-iris-data-set-make-it-so-successful-as-an-example-teaching/74901#74901)
+
+The iris dataset was introduced by the British statistician and biologist Ronald Fisher in his 1936 paper [“The use of multiple measurements in taxonomic problems”.](https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1469-1809.1936.tb02137.x) 
+In this article, Fisher developed and evaluated a linear function to differentiate Iris species based on the morphology of their flowers. It was the first time that the sepal and petal measures of the three Iris species appeared publicly.
+
+![](origDataTable.png)
+
+[ref](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
+
+Fisher didn’t collect these data himself. He explicitly credited the data source to [Dr. Edgar Anderson](http://people.wku.edu/charles.smith/chronob/ANDE1897.html), a botonist, who collected the majority of the data at the Gaspé Peninsula in Canada. 
+![](gaspe_canada.png)
+
+
+"Dr. Anderson was a faculty member at the Washington University in St. Louis. In 1929, he accepted a fellowship to work in Britain with a few scientists, including Fisher. Through this collaboration opportunity, Fisher obtained Dr. Anderson’s permission to use the data set in his article. 
+
+The discriminant function performed well in discriminating between these species, 
+The Iris setosa is noticeably different from the other two species and there is some overlap between Iris versicolor and Iris virginica. 
+Dr. Anderson published a manuscript [“The Species Problems in Iris”](https://www.jstor.org/stable/2394164?seq=1) to discuss the discrimination of Iris species.
+In the article, Dr. Anderson noted that there is a noticeable difference in the seed size between these three species in addition to the difference in the sizes of their petals and sepals.
+[ref](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
+
 
 ![](iris.png)
 
-###### note
-Iris setosa, Iris versicolor and Iris virginica are three species (not varieties, as in some statistical accounts)[ref](https://stats.stackexchange.com/questions/74776/what-aspects-of-the-iris-data-set-make-it-so-successful-as-an-example-teaching/74901#74901)
 
+#### Research Plots
 
-#### Plots
-
-To start the reseach of the data through plots, I created a histogram, scatterplot and boxplot to get a closer look at how the variables are represented. I got good help with this from [ref](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/). [hist-variable.py](https://github.com/AineNicD/pands-project/blob/master/hist-variable.py), [scattervariable.py](https://github.com/AineNicD/pands-project/blob/master/scattervariable.py) and [boxvariable.py](https://github.com/AineNicD/pands-project/blob/master/boxvariable.py).
+To start the reseach of the data, I created a histogram, scatterplot and boxplot to get a closer look at how the variables are represented. I got good help with this from [ref](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/). [hist-variable.py](https://github.com/AineNicD/pands-project/blob/master/hist-variable.py), [scattervariable.py](https://github.com/AineNicD/pands-project/blob/master/scattervariable.py) and [boxvariable.py](https://github.com/AineNicD/pands-project/blob/master/boxvariable.py).
 
 I found my perfered method to load the iris data into my code is; 
 ~~~
@@ -132,19 +149,21 @@ import numpy as np
 ![](scattervariable.png)
 ![](boxvariable.png)
 
-### researching the data set
+### Researching the data set
 From these plots, it is a bit dificult to understand the data. As they are from three different species all bunched into one.
 I played around with different ways to seperate the data.
 A type into google of the “iris data set” produced pages upon pages of codes and analysis of the data set. It was very useful to see other people’s findings. 
 Many people broke the data down into seperate bits to analyse it further;
-such as this code which gives you the first 20 lines. 
+such as this code which gives you the first 20 lines, 
+[Machine learning mastery](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
 ~~~
 # head, number prints the number of lines you want
 print(dataset.head(20))
 ~~~
-from [Machine learning mastery](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/) this page also has a great break down of the data set and a few codes.
+![](irisHead.png)
 
-I decided to work with the data in full for my tasks but seperated them by speceis. 
+This method only shows setosa. 
+I decided to work with the data in full for my tasks and seperated them by speceis as Fisher did in his original paper. 
 
 I highly recommend [scilkit-learn](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html), it has great information on data sets already built in. 
 
@@ -159,32 +178,79 @@ virginica =data[data['species']=='virginica']
 I used this method to describe each variabe in [describe.py](https://github.com/AineNicD/pands-project/blob/master/Describe.py).
 It produces a lovely output sumarising each species data.
 
-![](Describe()output.png)
+![](describe()output.png)
 
-I used this summary of the data for my [Summarytxt.py](https://github.com/AineNicD/pands-project/blob/master/summaryTxt.py)
+I used this summary of the data for my [summary.py](https://github.com/AineNicD/pands-project/blob/master/summaryTxt.py)
 
-I added this code to output the summary of each variable to a single text file, 
+I did extensive research, re watching course videos and studying the [Real python](https://realpython.com/read-write-files-python/), and the [pandas website](https://pandas.pydata.org/)to come up with this code, it is simple but effective. It produced the Summary text file I wanted it to. 
+
 ~~~
-a = setosa.describe(), versicolor.describe(),virginica.describe()
+##summary of details to string for the txt file
+d = str(data.describe())
+s = str(setosa.describe())
+ver = str (versicolor.describe())
+vir = str(virginica.describe())
 
-print(a)
-
-#outputing result of code to a text file.
-def out_fun():
-    return str(a)
-output = out_fun()
-file = open("Summaryvariable.txt","w")
-file.write(output)
+#output to file with headings on seperate lines
+file = open("Summary.txt","w")
+file.write(" IRIS DATA SET SUMMARY \n")
+file.write(d)
+file.write("\n SETOSA DETAILS \n")
+file.write(s)
+file.write("\n VERSICOLOR DETAILS \n")
+file.write(ver)
+file.write("\n VIRGINICA DETAILS \n")
+file.write(vir)
 file.close()
 ~~~
-
-I got great help with this output code from [ref](https://www.quora.com/How-do-I-write-the-output-of-a-function-to-a-text-file-in-python)
-I again seperated them by species. I improved on this code for my main [analysis.py](https://github.com/AineNicD/pands-project/blob/master/analysis.py)
+The result is here at [Summary.txt](https://github.com/AineNicD/pands-project/blob/master/Summary.txt)
+~~~
+IRIS DATA SET SUMMARY 
+       sepal_length  sepal_width  petal_length  petal_width
+count    150.000000   150.000000    150.000000   150.000000
+mean       5.843333     3.054000      3.758667     1.198667
+std        0.828066     0.433594      1.764420     0.763161
+min        4.300000     2.000000      1.000000     0.100000
+25%        5.100000     2.800000      1.600000     0.300000
+50%        5.800000     3.000000      4.350000     1.300000
+75%        6.400000     3.300000      5.100000     1.800000
+max        7.900000     4.400000      6.900000     2.500000
+ SETOSA DETAILS 
+       sepal_length  sepal_width  petal_length  petal_width
+count      50.00000    50.000000     50.000000     50.00000
+mean        5.00600     3.418000      1.464000      0.24400
+std         0.35249     0.381024      0.173511      0.10721
+min         4.30000     2.300000      1.000000      0.10000
+25%         4.80000     3.125000      1.400000      0.20000
+50%         5.00000     3.400000      1.500000      0.20000
+75%         5.20000     3.675000      1.575000      0.30000
+max         5.80000     4.400000      1.900000      0.60000
+ VERSICOLOR DETAILS 
+       sepal_length  sepal_width  petal_length  petal_width
+count     50.000000    50.000000     50.000000    50.000000
+mean       5.936000     2.770000      4.260000     1.326000
+std        0.516171     0.313798      0.469911     0.197753
+min        4.900000     2.000000      3.000000     1.000000
+25%        5.600000     2.525000      4.000000     1.200000
+50%        5.900000     2.800000      4.350000     1.300000
+75%        6.300000     3.000000      4.600000     1.500000
+max        7.000000     3.400000      5.100000     1.800000
+ VIRGINICA DETAILS 
+       sepal_length  sepal_width  petal_length  petal_width
+count      50.00000    50.000000     50.000000     50.00000
+mean        6.58800     2.974000      5.552000      2.02600
+std         0.63588     0.322497      0.551895      0.27465
+min         4.90000     2.200000      4.500000      1.40000
+25%         6.22500     2.800000      5.100000      1.80000
+50%         6.50000     3.000000      5.550000      2.00000
+75%         6.90000     3.175000      5.875000      2.30000
+max         7.90000     3.800000      6.900000      2.50000
+~~~
 
 Next step was to save a histogram of each variable to png files,
 
 I seperated them by species to produce histograms of each vaibale that save under the name of the species. 
-[histVarPng.py]()
+[histVarPng.py](https://github.com/AineNicD/pands-project/blob/master/histVarPng.py)
 
 ~~~
 #outputs histograms
@@ -210,14 +276,13 @@ Virginica
 
 ![](virginica.png)
 
-For outputing scatter plots of each pair of data. [scattervar.py](). 
-These imports were used in this code
+For outputing scatter plots of each pair of variables, [scattervar.py](https://github.com/AineNicD/pands-project/blob/master/scatterVar.py). I turned to the Seaborn library
+where I found this import 
 ~~~
 from pandas.plotting import scatter_matrix
-import seaborn as sns
 ~~~
 There are so many great codes for analysis in the Seaborn library
-[seaborn website](https://seaborn.pydata.org/generated/seaborn.PairGrid.html)  helped me deveop this for the scatterplots of each pair,
+[seaborn website](https://seaborn.pydata.org/generated/seaborn.PairGrid.html), it helped me deveop this for the scatterplots of each pair,
  seaborn.FacetGrid is a Multi-plot grid for plotting conditional relationships.
 After many failed attemps and playing around with it, I used this method to produce these two lines of code.
 ~~~
@@ -238,21 +303,6 @@ The program [analysis.py](https://github.com/AineNicD/pands-project/blob/master/
 > 2. saves a histogram of each variable to png files, and
 > 3. outputs a scatter plot of each pair of variables.
 
-I wasn't happy with the text file my code was producing for the part 1 of this program, I researched the pandas website and details on how to write and save outputs to a file and came up with this code; 
-
-~~~
-file = open("Summary.txt","w")
-file.write(" IRIS DATA SET SUMMARY \n")
-file.write(d)
-file.write("\n SETOSA DETAILS \n")
-file.write(s)
-file.write("\n VERSICOLOR DETAILS \n")
-file.write(ver)
-file.write("\n VIRGINICA DETAILS \n")
-file.write(vir)
-file.close()
-~~~
-I was very happy with the text file this produced with headings. \n means new line and played a vital role in making my text file more presentable. [Real python](https://realpython.com/read-write-files-python/) have a great guide for this. 
 
 
 ### References
