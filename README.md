@@ -175,7 +175,7 @@ versicolor =data[data['species']=='versicolor']
 
 virginica =data[data['species']=='virginica']
 ~~~
-I used this method to describe each variabe in [describe.py](https://github.com/AineNicD/pands-project/blob/master/Describe.py).
+I used this method to describe each variabe in [describe.py](https://github.com/AineNicD/pands-project/blob/master/describe.py).
 It produces a lovely output sumarising each species data.
 
 ![](describe()output.png)
