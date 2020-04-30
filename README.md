@@ -46,9 +46,7 @@ import pandas as pd
 data = pd.read_csv("IrisDataSet.csv") 
 ~~~
 
-#### For Statistical Analysis code 
-
-Import all necessary libraries of Python —
+#### Import all necessary libraries of Python —
 ~~~
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -59,14 +57,15 @@ Once you are sure you have the right software installed with the accompying libr
 Get to know what you are working with.
 * [Learnpython.org](https://www.learnpython.org/) is a great source for this.
 For
-* [pandas](https://pandas.pydata.org/)- pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,built on top of the Python programming language.
-* [matplotlib](https://matplotlib.org/) Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python
-* [seaborn](https://seaborn.pydata.org/) is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
-* [numpy](https://numpy.org/) is a general-purpose array-processing package. It provides a high-performance multidimensional array object, and tools for working with these arrays. It is the fundamental package for scientific computing with Python.
+* "[pandas](https://pandas.pydata.org/)- pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,built on top of the Python programming language."
+* "[matplotlib](https://matplotlib.org/) Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python"
+* "[seaborn](https://seaborn.pydata.org/) is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics."
+* "[numpy](https://numpy.org/) is a general-purpose array-processing package. It provides a high-performance multidimensional array object, and tools for working with these arrays. It is the fundamental package for scientific computing with Python."
 
 Those websites are full of information about how to use the tools and is a great source for code.
 Also a quick google search is sure to bring good results. 
-I am new to Programming but even I can tell python is the best language.
+
+I am new to Programming and truly enjoying learning through Python, there are so many great resources online.
 There is so much support and it is all open source. [Python community](https://www.python.org/community/).
 
 
@@ -96,7 +95,7 @@ The Iris dataset is deservedly widely used throughout statistical science, espec
 There are many reasons for this: 
 
 ~~~
-* It contains 150 observations, it is small but not trivial. 
+* "It contains 150 observations, it is small but not trivial. 
 * There are no null values in the data set.
 * There are 50 observations of each species (setosa, versicolor, virginica).
 * Anderson classified 50 examples of 3 different species. 
@@ -105,7 +104,7 @@ There are many reasons for this:
   * Collected by the same person
   * Measured using the same instruments
 * The task it poses of discriminating between three species of Iris from measurements of their petals and sepals is simple but challenging.
-* The data are real good quality data. In principle and in practice, test datasets could be synthetic and that might be necessary or useful to make a point. 
+* The data are real good quality data. In principle and in practice, test datasets could be synthetic and that might be necessary or useful to make a point." 
 ~~~
 [ref](https://stats.stackexchange.com/questions/74776/what-aspects-of-the-iris-data-set-make-it-so-successful-as-an-example-teaching/74901#74901)
 
@@ -116,13 +115,13 @@ In this article, Fisher developed and evaluated a linear function to differentia
 
 [ref](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
 
-Fisher didn’t collect these data himself. He explicitly credited the data source to [Dr. Edgar Anderson](http://people.wku.edu/charles.smith/chronob/ANDE1897.html), a botonist, who collected the majority of the data at the Gaspé Peninsula in Canada. 
+ [Dr. Edgar Anderson](http://people.wku.edu/charles.smith/chronob/ANDE1897.html), a botonist, collected the majority of the data at the Gaspé Peninsula in Canada. 
 ![](gaspe_canada.png)
 
 
 "Dr. Anderson was a faculty member at the Washington University in St. Louis. In 1929, he accepted a fellowship to work in Britain with a few scientists, including Fisher. Through this collaboration opportunity, Fisher obtained Dr. Anderson’s permission to use the data set in his article."[ref](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
 
-The discriminant function performed well in discriminating between these species, 
+The discriminant function Fisher developed performed well in discriminating between these species, 
 The Iris setosa is noticeably different from the other two species and there is some overlap between Iris versicolor and Iris virginica. 
 Dr. Anderson published a manuscript [“The Species Problems in Iris”](https://www.jstor.org/stable/2394164?seq=1) to discuss the discrimination of Iris species.
 In the article, Dr. Anderson noted that there is a noticeable difference in the seed size between these three species in addition to the difference in the sizes of their petals and sepals.
@@ -134,14 +133,14 @@ In the article, Dr. Anderson noted that there is a noticeable difference in the 
 
 #### Research Plots
 
-To start the reseach of the data, I created a histogram, scatterplot and boxplot to get a closer look at how the variables are represented. I got good help with this from [ref](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/). [hist-variable.py](https://github.com/AineNicD/pands-project/blob/master/hist-variable.py), [scattervariable.py](https://github.com/AineNicD/pands-project/blob/master/scattervariable.py) and [boxvariable.py](https://github.com/AineNicD/pands-project/blob/master/boxvariable.py).
+To start the reseach of the data, I created a histogram, scatterplot and boxplot to get a closer look at how the variables are represented. I got good help with this from [ref](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/). I then created the plots [hist-variable.py](https://github.com/AineNicD/pands-project/blob/master/hist-variable.py), [scattervariable.py](https://github.com/AineNicD/pands-project/blob/master/scattervariable.py) and [boxvariable.py](https://github.com/AineNicD/pands-project/blob/master/boxvariable.py).
 
 I found my perfered method to load the iris data into my code is; 
 ~~~
 import pandas as pd
 data = pd.read_csv("IrisDataSet.csv") 
 ~~~
-a reminder of other important imports;
+other important imports to create plots;
 ~~~
 import matplotlib.pyplot as plt
 import numpy as np
@@ -183,7 +182,7 @@ It produces a lovely output sumarising each species data.
 
 I used this summary of the data for my [summary.py](https://github.com/AineNicD/pands-project/blob/master/summary.py)
 
-I did extensive research, re watching course videos and studying the [Real python](https://realpython.com/read-write-files-python/), and the [pandas website](https://pandas.pydata.org/)to come up with this code, it is simple but effective. It produced the summary text file I wanted it to. 
+I did extensive research, re watching course videos and studying the [Real python](https://realpython.com/read-write-files-python/), and the [pandas website](https://pandas.pydata.org/)to come up with this code, it produced the summary text file I wanted it to. 
 
 ~~~
 ##summary of details to string for the txt file
@@ -303,7 +302,6 @@ The program [analysis.py](https://github.com/AineNicD/pands-project/blob/master/
 > 1. outputs a summary of each variable to a single text file.
 > 2. saves a histogram of each variable to png files, and
 > 3. outputs a scatter plot of each pair of variables.
-
 
 
 ### References
