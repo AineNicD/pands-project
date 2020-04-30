@@ -309,33 +309,33 @@ The program [analysis.py](https://github.com/AineNicD/pands-project/blob/master/
 
 
 ### References
-Ian McLoughlin and Andrew Beatty course material - They have done a great job of introducing a newbie like me to python coding and I watched and re-watched their video material many times while completing this project. They also provided great links to material for further learning which is great help.
+* Ian McLoughlin and Andrew Beatty course material - They have done a great job of introducing a newbie like me to python coding and I watched and re-watched their video material many times while completing this project. They also provided great links to material for further learning which is great help.
 
-A whirlwind tour of python by Jake Vanderplas- in particular the chaper "A preview of data science tools" for this project
+* A whirlwind tour of python by Jake Vanderplas- in particular the chaper "A preview of data science tools" for this project
 
-[Real Python matplotlib guide](https://realpython.com/python-matplotlib-guide/)
+* [Real Python matplotlib guide](https://realpython.com/python-matplotlib-guide/)
 
-[Real Python read write files](https://realpython.com/read-write-files-python/)
+* [Real Python read write files](https://realpython.com/read-write-files-python/)
 
-[Wikipedia](https://en.wikipedia.org/wiki/Iris_flower_data_set)
+* [Wikipedia](https://en.wikipedia.org/wiki/Iris_flower_data_set)
 
-[iris data](https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv)
+* [iris data](https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv)
 
-[medium](https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40)
+* [medium](https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40)
 
-[stats stack exchange](https://stats.stackexchange.com/questions/74776/what-aspects-of-the-iris-data-set-make-it-so-successful-as-an-example-teaching/74901#74901)
+* [stats stack exchange](https://stats.stackexchange.com/questions/74776/what-aspects-of-the-iris-data-set-make-it-so-successful-as-an-example-teaching/74901#74901)
 
-[cs.odu](https://www.cs.odu.edu/~ccartled/Teaching/2017-Fall/DataAnalysis/Presentations/030-iris-dataset.pdf)
+* [cs.odu](https://www.cs.odu.edu/~ccartled/Teaching/2017-Fall/DataAnalysis/Presentations/030-iris-dataset.pdf)
 
-[machine learning mastery](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
+* [machine learning mastery](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
 
-[scikit-learn](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html)
+* [scikit-learn](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html)
 
-[pandas dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html)
+* [pandas dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html)
 
-[stack over flow](https://stackoverflow.com/questions/46411533/how-can-i-save-histogram-plot-in-python)
+* [stack over flow](https://stackoverflow.com/questions/46411533/how-can-i-save-histogram-plot-in-python)
 
-[seaborn data](https://seaborn.pydata.org/generated/seaborn.PairGrid.htm)
+* [seaborn data](https://seaborn.pydata.org/generated/seaborn.PairGrid.htm)
 
 
 
