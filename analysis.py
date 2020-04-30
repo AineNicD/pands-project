@@ -1,18 +1,17 @@
+#Aine Nic Dhonnacha
 #This program analysis.py
-#- outputs a summary of each variable to a single text file.
-#- saves a histogram of each variable to png files, and
-# outputs a scatter plot of each pair of variables.
+
+#-outputs a summary of each variable to a single text file.
+#-saves a histogram of each variable to png files, and
+#outputs a scatter plot of each pair of variables.
 
 #I worked on each task seperatley and then put them all together.
 
-#A summary of the each variable saved to a single text file.
-
 #import libraries 
-
 import numpy as np
 import pandas as pd
 #https://pandas.pydata.org/docs/reference/api/pandas.plotting.scatter_matrix.html
-# imported for scatter plot, there are many options like this in the pandas library
+#imported for scatter plot, there are many options like this in the pandas library
 from pandas.plotting import scatter_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -32,7 +31,7 @@ versicolor =data[data['species']=='versicolor']
 
 virginica =data[data['species']=='virginica']
 
-##summary of details to string for the txt file
+#summary of details to string for the text file
 d = str(data.describe())
 s = str(setosa.describe())
 ver = str (versicolor.describe())
@@ -60,7 +59,6 @@ file.write("\n VIRGINICA DETAILS \n")
 file.write(vir)
 file.close()
 
-#Saves a historgram of each variable to png files
 
 #outputs histograms
 setosa.hist()
@@ -76,18 +74,18 @@ plt.savefig("virginica.png")
 
 #https://www.kaggle.com/farheen28/iris-dataset-analysis-using-knn
 #https://seaborn.pydata.org/generated/seaborn.PairGrid.html
-
 #There are so many great codes for analysis in the Seaborn library
 #The links above helped me deveop this for the scatterplots of each pair
-#after a few failed attemps and playing around with it,
-#it simplified to two lines of code for both.
 
 sns.FacetGrid(data, hue="species", height=8).map(plt.scatter, "sepal_length", "sepal_width").add_legend() 
 sns.FacetGrid(data, hue="species", height=8).map(plt.scatter, "petal_length", "petal_width").add_legend() 
 
+#outputs plots
 plt.show()
 
 #references
 #Ian McLoughlin course lecture videos
 #https://www.kaggle.com/anthonyhills/classifying-species-of-iris-flowers
 #https://realpython.com/read-write-files-python/
+#https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation
+#https://www.kaggle.com/farheen28/iris-dataset-analysis-using-knn
