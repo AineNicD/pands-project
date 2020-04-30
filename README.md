@@ -90,6 +90,7 @@ Under 5 attributes;
 * Species
 
 ![](petal_sepal.png)
+[ref](https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40)
 
 The Iris dataset is deservedly widely used throughout statistical science, especially for illustrating various problems in statistical graphics, multivariate statistics and machine learning. [ref](https://stats.stackexchange.com/questions/74776/what-aspects-of-the-iris-data-set-make-it-so-successful-as-an-example-teaching/74901#74901)
 There are many reasons for this: 
@@ -117,6 +118,7 @@ In this article, Fisher developed and evaluated a linear function to differentia
 
  [Dr. Edgar Anderson](http://people.wku.edu/charles.smith/chronob/ANDE1897.html), a botonist, collected the majority of the data at the Gaspé Peninsula in Canada. 
 ![](gaspe_canada.png)
+[ref](https://www.ctvnews.ca/lifestyle/touring-canada-s-gaspe-peninsula-on-2-wheels-1.3558303)
 
 
 "Dr. Anderson was a faculty member at the Washington University in St. Louis. In 1929, he accepted a fellowship to work in Britain with a few scientists, including Fisher. Through this collaboration opportunity, Fisher obtained Dr. Anderson’s permission to use the data set in his article." [ref](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
@@ -130,6 +132,7 @@ In the article, Dr. Anderson noted that there is a noticeable difference in the 
 
 
 ![](iris.png)
+[ref](https://medium.com/analytics-vidhya/exploratory-data-analysis-uni-variate-analysis-of-iris-data-set-690c87a5cd40)
 
 
 #### Research Plots
@@ -333,4 +336,6 @@ A whirlwind tour of python by Jake Vanderplas- in particular the chaper "A previ
 [stack over flow](https://stackoverflow.com/questions/46411533/how-can-i-save-histogram-plot-in-python)
 
 [seaborn data](https://seaborn.pydata.org/generated/seaborn.PairGrid.htm)
+
+
 
