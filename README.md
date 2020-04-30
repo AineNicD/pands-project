@@ -313,7 +313,7 @@ The sepal length is similar in all three but the sepal width is generally larger
 While virginica and versicolor have similar petal lengths and petal widths, Setosa’s petal widths are significantly smaller. 
 Versicolor and virginica have more in common with each other than setosa. Setosa has significantly smaller petals while having larger sepals widths. 
 The plots produced display clearly the inconsistency in sepal length and width in versicolor and virginica. 
-While the setosa species displays more consistency, what setosa lacks in petal width it makes up for with larger sepal width.
+While the setosa species displays more consistency in its measurements, what setosa lacks in petal width it makes up for with larger sepal width.
 
 ### References
 * Ian McLoughlin and Andrew Beatty course material - They have done a great job of introducing a newbie like me to python coding and I watched and re-watched their video material many times while completing this project. They also provided great links to material for further learning which is great help.
