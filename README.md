@@ -300,12 +300,21 @@ This output my scatter plot of each pair of variables.
 
 Now that I had finally figured out how to do the three tasks set out in the program for this project it was time to put them all together in [analysis.py](https://github.com/AineNicD/pands-project/blob/master/analysis.py)
 
-
 The program [analysis.py](https://github.com/AineNicD/pands-project/blob/master/analysis.py)
 
 > 1. outputs a summary of each variable to a single text file.
 > 2. saves a histogram of each variable to png files, and
 > 3. outputs a scatter plot of each pair of variables.
+
+### Iris data set research conclusion 
+
+From the plots and the summary of information produced through python code, we can see the differences and similarities between the setosa, versicolour and virginica species of iris flower. 
+The sepal length is similar in all three but the sepal width is generally larger in the setosa species.
+While virginica and versicolor have similar petal lengths and petal widths, Setosa’s petal widths are significantly smaller. 
+virginica and versicolor have more in common with each other than setosa. Setosa has significantly smaller petals while having larger sepals widths. 
+The plots display clearly the inconsistency in sepal length and width in versicolor and virginica. 
+While the setosa species displays more consistency, what setosa lacks in petal width it makes up for with larger sepal width. 
+
 
 
 ### References
