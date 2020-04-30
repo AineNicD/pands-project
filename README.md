@@ -115,7 +115,7 @@ In this article, Fisher developed and evaluated a linear function to differentia
 
 [ref](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
 
- [Dr. Edgar Anderson](http://people.wku.edu/charles.smith/chronob/ANDE1897.html), a botonist, collected the majority of the data at the Gaspé Peninsula in Canada. 
+ [Dr. Edgar Anderson](http://people.wku.edu/charles.smith/chronob/ANDE1897.html), a botanist, collected the majority of the data at the Gaspé Peninsula in Canada. 
 ![](gaspe_canada.png)
 [ref](https://www.ctvnews.ca/lifestyle/touring-canada-s-gaspe-peninsula-on-2-wheels-1.3558303)
 
