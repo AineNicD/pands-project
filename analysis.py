@@ -5,7 +5,7 @@
 #-saves a histogram of each variable to png files, and
 #outputs a scatter plot of each pair of variables.
 
-#I worked on each task seperatley and then put them all together.
+#I worked on each task separately and then put them all together.
 
 #import libraries 
 import numpy as np
