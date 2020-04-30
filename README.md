@@ -22,7 +22,7 @@ I downloaded the [irish data set](IrisDataSet.csv) from [github](https://raw.git
 
 * [Cmder console emulator](https://cmder.net/), a pre-configured software package that provides you with a great terminal emulator.
 
-* [Visual Studio Code](https://code.visualstudio.com/), this source-code editor will assist you in saving annd editing your code.
+* [Visual Studio Code](https://code.visualstudio.com/), this source-code editor will assist you in saving and editing your code.
 
 * [Anaconda](https://www.anaconda.com/distribution/), a free and open-source distribution of the Python programming language.
 Anaconda is popular because it brings many of the tools used in data science and machine learning with just one install, so it's great for having short and simple setup. It has all the libraries needed to write and implement the programs in this project. 
@@ -53,16 +53,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 ~~~
-Once you are sure you have the right software installed with the accompanying library (I cannnot recomend Anaconda enough for this)
-Get to know what you are working with.
+Once you are sure you have the right software installed with the accompanying library, (I cannot recommend Anaconda enough for this)
+get to know what you are working with.
 * [Learnpython.org](https://www.learnpython.org/) is a great source for this.
-For
-* [pandas](https://pandas.pydata.org/)- " is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,built on top of the Python programming language."
-* [matplotlib](https://matplotlib.org/) " is a comprehensive library for creating static, animated, and interactive visualizations in Python"
+* [pandas](https://pandas.pydata.org/)- "is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language."
+* [matplotlib](https://matplotlib.org/) "is a comprehensive library for creating static, animated, and interactive visualizations in Python"
 * [seaborn](https://seaborn.pydata.org/) "is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics."
 * [numpy](https://numpy.org/) "is a general-purpose array-processing package. It provides a high-performance multidimensional array object, and tools for working with these arrays. It is the fundamental package for scientific computing with Python."
 
-Those websites are full of information about how to use the tools and is a great source for code.
+Those websites are full of information about how to use the tools and are a great source for code.
 Also a quick google search is sure to bring good results. 
 
 I am new to Programming and truly enjoying learning through Python, there are so many great resources online.
@@ -139,7 +138,7 @@ In the article, Dr. Anderson noted that there is a noticeable difference in the 
 
 To start the reseach of the data, I created a histogram, scatterplot and boxplot to get a closer look at how the variables are represented. I got good help with this from [machine learning mastery](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/). I then created the plots [hist-variable.py](https://github.com/AineNicD/pands-project/blob/master/hist-variable.py), [scattervariable.py](https://github.com/AineNicD/pands-project/blob/master/scattervariable.py) and [boxvariable.py](https://github.com/AineNicD/pands-project/blob/master/boxvariable.py).
 
-I found my perfered method to load the iris data into my code is; 
+I found my preferred method to load the iris data into my code is; 
 ~~~
 import pandas as pd
 data = pd.read_csv("IrisDataSet.csv") 
@@ -154,10 +153,10 @@ import numpy as np
 ![](boxvariable.png)
 
 ### Researching the data set
-From these plots, it is a bit dificult to understand the data. As they are from three different species all bunched into one.
-I played around with different ways to seperate the data.
+From these plots, it is a bit difficult to understand the data. As they are from three different species all bunched into one.
+I played around with different ways to separate the data.
 A type into google of the “iris data set” produced pages upon pages of codes and analysis of the data set. It was very useful to see other people’s findings. 
-Many people broke the data down into seperate bits to analyse it further;
+Many people broke the data down into separate bits to analyse it further;
 such as this code which gives you the first 20 lines, 
 [Machine learning mastery](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/)
 ~~~
@@ -167,7 +166,7 @@ print(dataset.head(20))
 ![](irisHead.png)
 
 This method only shows setosa. 
-I decided to work with the data in full for my tasks and seperated them by speceis as Fisher did in his original paper. 
+I decided to work with the data in full for my tasks and separated them by speceis as Fisher did in his original paper. 
 
 I highly recommend [scilkit-learn](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html), it has great information on data sets already built in. 
 
@@ -286,9 +285,9 @@ where I found this import
 from pandas.plotting import scatter_matrix
 ~~~
 There are so many great codes for analysis in the Seaborn library
-[seaborn website](https://seaborn.pydata.org/generated/seaborn.PairGrid.html), it helped me deveop this for the scatterplots of each pair,
+[seaborn website](https://seaborn.pydata.org/generated/seaborn.PairGrid.html), it helped me develop this for the scatterplots of each pair,
  seaborn.FacetGrid is a Multi-plot grid for plotting conditional relationships.
-After many failed attemps and playing around with it, I used this method to produce these two lines of code.
+After many failed attempts and playing around with it, I used this method to produce these two lines of code.
 ~~~
 sns.FacetGrid(data, hue="species", height=6).map(plt.scatter, "sepal_length", "sepal_width").add_legend() 
 sns.FacetGrid(data, hue="species", height=6).map(plt.scatter, "petal_length", "petal_width").add_legend() 
@@ -318,7 +317,7 @@ While the setosa species displays more consistency in its measurements, what set
 ### References
 * Ian McLoughlin and Andrew Beatty course material - They have done a great job of introducing a newbie like me to python coding and I watched and re-watched their video material many times while completing this project. They also provided great links to material for further learning which is great help.
 
-* A whirlwind tour of python by Jake Vanderplas- in particular the chaper "A preview of data science tools" for this project
+* A whirlwind tour of python by Jake Vanderplas- in particular the chapter "A preview of data science tools" for this project
 
 * [Real Python matplotlib guide](https://realpython.com/python-matplotlib-guide/)
 
