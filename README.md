@@ -341,7 +341,7 @@ While the setosa species displays more consistency in its measurements, what set
 
 * [stack over flow](https://stackoverflow.com/questions/46411533/how-can-i-save-histogram-plot-in-python)
 
-* [seaborn data](https://seaborn.pydata.org/generated/seaborn.PairGrid.htm)
+* [seaborn data](https://seaborn.pydata.org/generated/seaborn.PairGrid.html)
 
 
 
