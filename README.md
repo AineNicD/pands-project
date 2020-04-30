@@ -6,7 +6,7 @@ This repository contains my research of the well known [Fisher’s Iris data set
 I downloaded the [irish data set](IrisDataSet.csv) from [github](https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv).
 
 ## Problem statement
-"This project concerns the well-known Fisher’s Iris data set. You must research the data set and write documentation and code (in Python to investigate it. An online search for information on the data set will convince you that many people have investigated it previously. You are expected to be able to break this project into several smaller tasks that are easier to solve, and to plug these together after they have been completed. You might do that for this project as follows: 
+"This project concerns the well-known Fisher’s Iris data set. You must research the data set and write documentation and code (in Python) to investigate it. An online search for information on the data set will convince you that many people have investigated it previously. You are expected to be able to break this project into several smaller tasks that are easier to solve, and to plug these together after they have been completed. You might do that for this project as follows: 
 > 1. Research the data set online and write a summary about it in your README. 
 > 2. Download the data set and add it to your repository. 
 > 3. Write a program called analysis.py that: 
