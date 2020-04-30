@@ -3,7 +3,7 @@ My GMIT Programming and Scripting Project 2020
 
 ## Introduction
 This repository contains my research of the well known [Fisher’s Iris data set](https://en.wikipedia.org/wiki/Iris_flower_data_set) with written documentation and code in Python for my project. 
-I downloaded the [irish data set](IrisDataSet.csv) from [github](https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv).
+I downloaded the [iris data set](IrisDataSet.csv) from [github](https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv).
 
 ## Problem statement
 "This project concerns the well-known Fisher’s Iris data set. You must research the data set and write documentation and code (in Python) to investigate it. An online search for information on the data set will convince you that many people have investigated it previously. You are expected to be able to break this project into several smaller tasks that are easier to solve, and to plug these together after they have been completed. You might do that for this project as follows: 
@@ -136,14 +136,14 @@ In the article, Dr. Anderson noted that there is a noticeable difference in the 
 
 #### Research Plots
 
-To start the reseach of the data, I created a histogram, scatterplot and boxplot to get a closer look at how the variables are represented. I got good help with this from [machine learning mastery](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/). I then created the plots [hist-variable.py](https://github.com/AineNicD/pands-project/blob/master/hist-variable.py), [scattervariable.py](https://github.com/AineNicD/pands-project/blob/master/scattervariable.py) and [boxvariable.py](https://github.com/AineNicD/pands-project/blob/master/boxvariable.py).
+To start the research of the data, I created a histogram, scatterplot and boxplot to get a closer look at how the variables are represented. I got good help with this from [machine learning mastery](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/). I then created the plots [hist-variable.py](https://github.com/AineNicD/pands-project/blob/master/hist-variable.py), [scattervariable.py](https://github.com/AineNicD/pands-project/blob/master/scattervariable.py) and [boxvariable.py](https://github.com/AineNicD/pands-project/blob/master/boxvariable.py).
 
-I found my preferred method to load the iris data into my code is; 
+I found my preferred method to load the iris data into my code is:
 ~~~
 import pandas as pd
 data = pd.read_csv("IrisDataSet.csv") 
 ~~~
-other important imports to create plots;
+other important imports to create plots:
 ~~~
 import matplotlib.pyplot as plt
 import numpy as np
@@ -166,7 +166,7 @@ print(dataset.head(20))
 ![](irisHead.png)
 
 This method only shows setosa. 
-I decided to work with the data in full for my tasks and separated them by speceis as Fisher did in his original paper. 
+I decided to work with the data in full for my tasks and separated them by species as Fisher did in his original paper. 
 
 I highly recommend [scilkit-learn](https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html), it has great information on data sets already built in. 
 
@@ -178,8 +178,8 @@ versicolor =data[data['species']=='versicolor']
 
 virginica =data[data['species']=='virginica']
 ~~~
-I used this method to describe each variabe in [describe.py](https://github.com/AineNicD/pands-project/blob/master/describe.py).
-It produces a lovely output sumarising each species data.
+I used this method to describe each variable in [describe.py](https://github.com/AineNicD/pands-project/blob/master/describe.py).
+It produces a lovely output summarising each species data.
 
 ![](describe()output.png)
 
@@ -250,9 +250,9 @@ min         4.90000     2.200000      4.500000      1.40000
 max         7.90000     3.800000      6.900000      2.50000
 ~~~
 
-Next step was to save a histogram of each variable to png files,
+Next step was to save a histogram of each variable to png files.
 
-I seperated them by species to produce histograms of each variable that save under the name of the species. 
+I separated them by species to produce histograms of each variable that save under the name of the species. 
 [histVarPng.py](https://github.com/AineNicD/pands-project/blob/master/histVarPng.py)
 
 ~~~
@@ -310,7 +310,7 @@ The program [analysis.py](https://github.com/AineNicD/pands-project/blob/master/
 From the plots and the summary of information produced through python code, we can see the differences and similarities between the setosa, versicolour and virginica species of iris flower. 
 The sepal length is similar in all three but the sepal width is generally larger in the setosa species.
 While virginica and versicolor have similar petal lengths and petal widths, Setosa’s petal widths are significantly smaller. 
-Versicolor and virginica have more in common with each other than setosa. Setosa has significantly smaller petals while having larger sepals widths. 
+Versicolor and virginica have more in common with each other than setosa. Setosa has significantly smaller petals while having larger sepal widths. 
 The plots produced display clearly the inconsistency in sepal length and width in versicolor and virginica. 
 While the setosa species displays more consistency in its measurements, what setosa lacks in petal width it makes up for with larger sepal width.
 
