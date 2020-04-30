@@ -9,7 +9,7 @@ data = pd.read_csv("irisDataSet.csv")
 #names of variables
 names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
 
-#data frame code for seperating each species from https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation
+#data frame code for separating each species from https://www.kaggle.com/abhishekkrg/python-iris-data-visualization-and-explanation
 
 #seperating them by species
 setosa = data[data['species']=='setosa'] 
@@ -18,7 +18,7 @@ versicolor =data[data['species']=='versicolor']
 
 virginica =data[data['species']=='virginica']
 
-##summary of details to string for the txt file
+#summary of details to string for the txt file
 d = str(data.describe())
 s = str(setosa.describe())
 ver = str (versicolor.describe())
