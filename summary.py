@@ -34,7 +34,7 @@ print(ver)
 print ("VIRGINICA DETAILS")
 print(vir)
 
-#output to file with headings on seperate lines
+#output to file with headings on separate lines
 file = open("Summary.txt","w")
 file.write(" IRIS DATA SET SUMMARY \n")
 file.write(d)
