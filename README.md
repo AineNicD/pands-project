@@ -53,14 +53,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 ~~~
-Once you are sure you have the right software installed with the accompying library(I cannnot recomend Anaconda enough for this)
+Once you are sure you have the right software installed with the accompanying library (I cannnot recomend Anaconda enough for this)
 Get to know what you are working with.
 * [Learnpython.org](https://www.learnpython.org/) is a great source for this.
 For
-* "[pandas](https://pandas.pydata.org/)- pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,built on top of the Python programming language."
-* "[matplotlib](https://matplotlib.org/) Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python"
-* "[seaborn](https://seaborn.pydata.org/) is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics."
-* "[numpy](https://numpy.org/) is a general-purpose array-processing package. It provides a high-performance multidimensional array object, and tools for working with these arrays. It is the fundamental package for scientific computing with Python."
+* [pandas](https://pandas.pydata.org/)- " is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,built on top of the Python programming language."
+* [matplotlib](https://matplotlib.org/) " is a comprehensive library for creating static, animated, and interactive visualizations in Python"
+* [seaborn](https://seaborn.pydata.org/) "is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics."
+* [numpy](https://numpy.org/) "is a general-purpose array-processing package. It provides a high-performance multidimensional array object, and tools for working with these arrays. It is the fundamental package for scientific computing with Python."
 
 Those websites are full of information about how to use the tools and is a great source for code.
 Also a quick google search is sure to bring good results. 
@@ -91,7 +91,7 @@ Under 5 attributes;
 
 ![](petal_sepal.png)
 
-The Iris dataset is deservedly widely used throughout statistical science, especially for illustrating various problems in statistical graphics, multivariate statistics and machine learning.[ref](https://stats.stackexchange.com/questions/74776/what-aspects-of-the-iris-data-set-make-it-so-successful-as-an-example-teaching/74901#74901)
+The Iris dataset is deservedly widely used throughout statistical science, especially for illustrating various problems in statistical graphics, multivariate statistics and machine learning. [ref](https://stats.stackexchange.com/questions/74776/what-aspects-of-the-iris-data-set-make-it-so-successful-as-an-example-teaching/74901#74901)
 There are many reasons for this: 
 
 ~~~
@@ -119,10 +119,11 @@ In this article, Fisher developed and evaluated a linear function to differentia
 ![](gaspe_canada.png)
 
 
-"Dr. Anderson was a faculty member at the Washington University in St. Louis. In 1929, he accepted a fellowship to work in Britain with a few scientists, including Fisher. Through this collaboration opportunity, Fisher obtained Dr. Anderson’s permission to use the data set in his article."[ref](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
+"Dr. Anderson was a faculty member at the Washington University in St. Louis. In 1929, he accepted a fellowship to work in Britain with a few scientists, including Fisher. Through this collaboration opportunity, Fisher obtained Dr. Anderson’s permission to use the data set in his article." [ref](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
 
-The discriminant function Fisher developed performed well in discriminating between these species, 
-The Iris setosa is noticeably different from the other two species and there is some overlap between Iris versicolor and Iris virginica. 
+The discriminant function Fisher developed performed well in discriminating between these species.
+The Iris setosa is noticeably different from the other two species and there is some overlap between Iris versicolor and Iris virginica.
+
 Dr. Anderson published a manuscript [“The Species Problems in Iris”](https://www.jstor.org/stable/2394164?seq=1) to discuss the discrimination of Iris species.
 In the article, Dr. Anderson noted that there is a noticeable difference in the seed size between these three species in addition to the difference in the sizes of their petals and sepals.
 [ref](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5)
@@ -133,7 +134,7 @@ In the article, Dr. Anderson noted that there is a noticeable difference in the 
 
 #### Research Plots
 
-To start the reseach of the data, I created a histogram, scatterplot and boxplot to get a closer look at how the variables are represented. I got good help with this from [ref](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/). I then created the plots [hist-variable.py](https://github.com/AineNicD/pands-project/blob/master/hist-variable.py), [scattervariable.py](https://github.com/AineNicD/pands-project/blob/master/scattervariable.py) and [boxvariable.py](https://github.com/AineNicD/pands-project/blob/master/boxvariable.py).
+To start the reseach of the data, I created a histogram, scatterplot and boxplot to get a closer look at how the variables are represented. I got good help with this from [machine learning mastery](https://machinelearningmastery.com/machine-learning-in-python-step-by-step/). I then created the plots [hist-variable.py](https://github.com/AineNicD/pands-project/blob/master/hist-variable.py), [scattervariable.py](https://github.com/AineNicD/pands-project/blob/master/scattervariable.py) and [boxvariable.py](https://github.com/AineNicD/pands-project/blob/master/boxvariable.py).
 
 I found my perfered method to load the iris data into my code is; 
 ~~~
@@ -182,10 +183,10 @@ It produces a lovely output sumarising each species data.
 
 I used this summary of the data for my [summary.py](https://github.com/AineNicD/pands-project/blob/master/summary.py)
 
-I did extensive research, re watching course videos and studying the [Real python](https://realpython.com/read-write-files-python/), and the [pandas website](https://pandas.pydata.org/)to come up with this code, it produced the summary text file I wanted it to. 
+I did extensive research, re-watching course videos and studying the [Real python](https://realpython.com/read-write-files-python/), and the [pandas website](https://pandas.pydata.org/) to come up with the following code, that saves a text file containing a summary of each variable.  
 
 ~~~
-##summary of details to string for the txt file
+#summary of details to string for the txt file
 d = str(data.describe())
 s = str(setosa.describe())
 ver = str (versicolor.describe())
@@ -249,7 +250,7 @@ max         7.90000     3.800000      6.900000      2.50000
 
 Next step was to save a histogram of each variable to png files,
 
-I seperated them by species to produce histograms of each vaibale that save under the name of the species. 
+I seperated them by species to produce histograms of each variable that save under the name of the species. 
 [histVarPng.py](https://github.com/AineNicD/pands-project/blob/master/histVarPng.py)
 
 ~~~
@@ -276,7 +277,7 @@ Virginica
 
 ![](virginica.png)
 
-For outputing scatter plots of each pair of variables, [scattervar.py](https://github.com/AineNicD/pands-project/blob/master/scatterVar.py). I turned to the Seaborn library
+For outputting scatter plots of each pair of variables, [scattervar.py](https://github.com/AineNicD/pands-project/blob/master/scatterVar.py). I turned to the Seaborn library
 where I found this import 
 ~~~
 from pandas.plotting import scatter_matrix
@@ -289,7 +290,7 @@ After many failed attemps and playing around with it, I used this method to prod
 sns.FacetGrid(data, hue="species", height=6).map(plt.scatter, "sepal_length", "sepal_width").add_legend() 
 sns.FacetGrid(data, hue="species", height=6).map(plt.scatter, "petal_length", "petal_width").add_legend() 
 ~~~
-This output my scatter plots of each pair of variables. 
+This output my scatter plot of each pair of variables. 
 
 ![](scatterSepal.png)
 ![](scatterPetal.png)
@@ -305,7 +306,7 @@ The program [analysis.py](https://github.com/AineNicD/pands-project/blob/master/
 
 
 ### References
-Ian McLoughlin and Andrew Beatty course material - They have done a great job of introducing a newbie like me to python coding and I watched and rewatched their video material many times while completing this project. They also provided great links to material for further learning which were of great help.
+Ian McLoughlin and Andrew Beatty course material - They have done a great job of introducing a newbie like me to python coding and I watched and re-watched their video material many times while completing this project. They also provided great links to material for further learning which is great help.
 
 A whirlwind tour of python by Jake Vanderplas- in particular the chaper "A preview of data science tools" for this project
 
